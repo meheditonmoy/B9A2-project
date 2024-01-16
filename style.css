@@ -10,6 +10,13 @@ body {
     /* font-family: "Inter", sans-serif; */
 }
 
+ .logo{
+    display: inline-flex;
+    justify-content: space-between;
+}
+/* .hamberger{
+    display: none;
+}  */
 .top-nav {
     max-width: 1100px;
     margin: 0 auto;
@@ -23,7 +30,7 @@ body {
 
 .top-nav .left-nav {
     display: flex;
-    gap: 20px;
+    gap: 300px;
     margin-bottom: 0;
     align-items: center;
 }
@@ -407,11 +414,12 @@ header .card {
     font-weight: 800;
 }
 
+
 .right-place img {
     width: 100%;
     height: 100%;
     border-radius: 16px;
-    position: relative;
+
     background: linear-gradient(180deg, #131318 -31.96%, rgba(19, 19, 24, 0.00) 100%);
     color: #FFF;
     text-align: center;
@@ -419,13 +427,20 @@ header .card {
     font-weight: 700;
     line-height: 36px;
 
+
 }
 
 .Perfect-Place .right-place .over-title {
-    position: absolute;
-    top: 50%;
+    color: #fff;
+    width: 400px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    position: relative;
+    top: -50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+
 }
 
 /* Newsletter  style */
@@ -554,8 +569,8 @@ footer {
     color: #131318;
     font-size: 32px;
     font-weight: 800;
-    
-    
+
+
 }
 
 .top-foter .footer-title .orange {
@@ -573,38 +588,60 @@ footer .footer-desc {
     margin-top: 15px;
 }
 
-.icon-footer{
+.icon-footer {
     text-align: center;
     margin-top: 32px;
 
 }
-.foot-hr{
+
+.foot-hr {
     background: rgba(19, 19, 24, 0.10);
     width: 70%;
     height: 1px;
     border: none;
     margin: 0 auto;
     margin-top: 50px;
-    
+
 }
-.desc-bottom{
+
+.desc-bottom {
     color: #131318;
-font-family: Inter;
-font-size: 16px;
-font-weight: 300;
-text-align: center;
-margin-top: 50px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 50px;
 }
 
 /* footer style end */
 
 @media screen and (max-width:600px) {
 
-
+    /* .logo{
+        width: 100%;
+    }
     /* header */
+    /* .right-nav ul{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
 
+    .hamberger{
+        display: inline-flex;
+    } */ */
 
     /* banner */
+    .top-nav{
+        flex-direction: column;
+    }
+    .top-nav .right-nav ul{
+        flex-direction: column;
+    }
+    .left-nav .logo{
+        display: inline-flex;
+        margin-left: 20px;
+    }
     header .card {
         width: 90%;
         height: auto;
@@ -749,8 +786,9 @@ margin-top: 50px;
 
     .Perfect-Place .left-place {
         width: 90%;
-
-
+    }
+    .Perfect-Place .right-place .over-title {
+        transform: translate(-50%, -300%);
     }
 
     /* Newsletter style */
@@ -774,28 +812,31 @@ margin-top: 50px;
 
     .Travel {
         width: 200px;
-        bottom: 150px;
-        left: 220px;
+        bottom: 160px;
+        left: 330px;
 
     }
 
     .Travel .com {
         color: #FFF;
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         padding-top: 20px;
+        margin-top: 10px;
+
     }
 
     .Travel .save-up {
         color: #FFF;
         text-align: center;
-        font-size: 26px;
+        font-size: 18px;
         font-weight: 800;
-        margin-top: 0;
+        margin-top: 20px;
     }
+
     /* footer style */
-    footer .footer-desc{
+    footer .footer-desc {
         width: 80%;
     }
 }
