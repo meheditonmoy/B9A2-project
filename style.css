@@ -3,37 +3,27 @@
     padding: 0px;
 }
 
-
-
 body {
     font-family: "Mulish", sans-serif;
     /* font-family: "Inter", sans-serif; */
 }
 
- .logo{
-    display: inline-flex;
-    justify-content: space-between;
-}
-/* .hamberger{
-    display: none;
-}  */
-.top-nav {
+nav {
     max-width: 1100px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     margin-bottom: 0;
     margin-top: 100px;
-
 }
 
 .top-nav .left-nav {
     display: flex;
-    gap: 300px;
     margin-bottom: 0;
     align-items: center;
 }
+
 
 .top-nav .right-nav ul {
     display: flex;
@@ -50,6 +40,9 @@ body {
     text-align: center;
     font-size: 18px;
     font-weight: 400;
+}
+.top-nav .right-nav ul a:hover{
+    border-bottom: 2px solid gray;
 }
 
 #a-orange {
@@ -68,7 +61,7 @@ body {
 .left-nav .orange {
     color: #FF5400;
 }
-
+/* header style */
 header .card {
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(Images/Group\ 13\ \(1\)\ \(1\).png);
     border-radius: 16px;
@@ -125,6 +118,10 @@ header .card {
     align-items: center;
     gap: 40px;
 }
+#down-right{
+    padding-right: 0;
+    margin-left: 20px;
+}
 
 .card-btn .primary-btn {
     background-color: #FF5400;
@@ -172,6 +169,7 @@ header .card {
     padding-left: 20px;
     margin-top: 24px;
 }
+
 
 .desc-2 {
     color: #5A5A5D;
@@ -616,31 +614,28 @@ footer .footer-desc {
 /* footer style end */
 
 @media screen and (max-width:600px) {
-
-    /* .logo{
-        width: 100%;
-    }
-    /* header */
-    /* .right-nav ul{
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-    }
-
-    .hamberger{
-        display: inline-flex;
-    } */ */
-
-    /* banner */
-    .top-nav{
+    nav{
         flex-direction: column;
     }
     .top-nav .right-nav ul{
         flex-direction: column;
+        margin-top: 50px;
+        gap: 20px;
+        
     }
-    .left-nav .logo{
-        display: inline-flex;
-        margin-left: 20px;
+    .top-nav .right-nav ul a:hover{
+        border-bottom: 2px solid gray;
+        background-color: #FF5400;
+        padding: 5px 20px;
+        color: #FFF;
+        
+    }
+    #down-right{
+        padding-right: 0;
+        margin-left: 40px;
+    }
+    #a-orange:hover{
+        color: #FFF;
     }
     header .card {
         width: 90%;
