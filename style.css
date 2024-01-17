@@ -622,13 +622,16 @@ footer .footer-desc {
         flex-direction: column;
         margin-top: 50px;
         gap: 20px;
+    
         
     }
+   
     .top-nav .right-nav ul a:hover{
         border-bottom: 2px solid gray;
         background-color: #FF5400;
         padding: 5px 20px;
         color: #FFF;
+        width: 100%;
         
     }
     #down-right{
@@ -639,7 +642,7 @@ footer .footer-desc {
         color: #FFF;
     }
     header .card {
-        width: 90%;
+        width: 95%;
         height: auto;
     }
 
@@ -777,7 +780,7 @@ footer .footer-desc {
     }
 
     .Perfect-Place .right-place {
-        width: 100%;
+        width: 98%;
     }
 
     .Perfect-Place .left-place {
